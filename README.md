@@ -32,9 +32,9 @@ is created usng mapToPair transformation
 4) Finally, a new Tuple is created in the format Tuple2<String, Double>, where String -> Symbol and Double -> maxprofit,  is created using the rdd.max function. The comparator function is held inside the class named TupleComparator
 	   
 ****************************************** Analysis 3 - Maximum Volume **************************************************************************
-i) The above mentioned steps are used to find the volume of each stock
-ii) A new RDD in the format - JavaPairRDD<String, Double>,where String -> Symbol and Double -> sum of all volumes, is created using reduceByKey transformation
-iii) A new Tuple is created in the format Tuple2<String, Double>, where String -> Symbol and Double -> maxvolume, is created using the rdd.max function. The comparator function is held inside the class named TupleComparator	   
+1) The above mentioned steps are used to find the volume of each stock
+2) A new RDD in the format - JavaPairRDD<String, Double>,where String -> Symbol and Double -> sum of all volumes, is created using reduceByKey transformation
+3) A new Tuple is created in the format Tuple2<String, Double>, where String -> Symbol and Double -> maxvolume, is created using the rdd.max function. The comparator function is held inside the class named TupleComparator	   
 
 COMMAND TO RUN SparkApplication.jar fat jar
 java -jar <full path of jar file> 52.55.237.11:9092 123 stockData
